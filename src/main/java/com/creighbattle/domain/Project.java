@@ -12,6 +12,7 @@ import java.util.Date;
 
 @Data
 @Entity
+@NoArgsConstructor
 public class Project {
 
     @Id
@@ -46,8 +47,6 @@ public class Project {
 
     private String projectLeader;
 
-    public Project() {
-    }
 
     @PrePersist
     protected void onCreate() {

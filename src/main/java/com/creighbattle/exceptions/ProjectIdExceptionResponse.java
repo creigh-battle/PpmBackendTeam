@@ -1,5 +1,6 @@
 package com.creighbattle.exceptions;
 
+
 public class ProjectIdExceptionResponse {
 
     private String projectIdentifier;
