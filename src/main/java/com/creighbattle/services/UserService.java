@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -29,8 +31,10 @@ public class UserService {
         } catch (Exception e) {
             throw new UsernameAlreadyExistsException("Username '" + newUser.getUsername() + "' already exists.");
         }
+    }
 
-
+    public Iterable<User> findAll(){
+        return userRepository.findAll();
     }
 
 }
