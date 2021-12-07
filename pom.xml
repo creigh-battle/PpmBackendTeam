@@ -97,7 +97,7 @@
             </activation>
             <properties>
                 <sonar.host.url>
-                    http://52.149.156.107:9000
+                    http://localhost:9000
                 </sonar.host.url>
             </properties>
         </profile>

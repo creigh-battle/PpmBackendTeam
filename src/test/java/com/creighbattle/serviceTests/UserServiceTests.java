@@ -24,6 +24,8 @@ class UserServiceTests {
     @MockBean
     private UserRepository userRepositoryTest;
 
+
+
     @Test
     public void findAllUserTest(){
         long userTestId = 1;
